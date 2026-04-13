@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(grep -l \"TODO\" wiki/api/*.md)",
+      "Bash(echo \"API 页面: $\\(grep -l \"TODO\" wiki/api/*.md)",
+      "Bash(wc -l wiki/api/*.md wiki/concepts/*.md)",
+      "Bash(grep -c \"TODO\" wiki/api/*.md wiki/concepts/*.md)",
+      "Bash(grep -h \"^\\\\[\" wiki/api/*.md wiki/concepts/*.md)",
+      "Bash(grep -v \"^$\")",
+      "Bash(find api:*)",
+      "Bash(echo \" langchain/: $\\(find raw/src/oss/langchain -name \"*.mdx\" -type f)",
+      "Bash(echo \"总页面数: $\\(find . -name \"*.md\" -type f)",
+      "Bash(shuf)",
+      "Bash(wc:*)",
+      "Bash(mkdir -p archive)",
+      "Bash(mv clean_empty_wikis.py create_extended_wikis.py create_final_wikis.py create_missing_wikis.py recreate_wikis.py update_wiki_links.py index_all_docs.py archive/)"
+    ]
+  }
+}
