@@ -1,0 +1,22 @@
+---
+name: AlibabaCloud
+category: sources
+source: python/integrations/providers/alibaba_cloud.mdx
+---
+
+## 描述
+
+Alibaba cloud integrations - Integrate with Alibaba cloud using LangChain Python.
+
+## 原始文档
+
+- **主文档**: [`python/integrations/providers/alibaba_cloud.mdx`](../../raw/python/integrations/providers/alibaba_cloud.mdx)
+
+## 文档信息
+
+- **标题**: Alibaba cloud integrations
+- **描述**: Integrate with Alibaba cloud using LangChain Python.
+
+## 相关页面
+
+- 查看原始文档获取完整信息

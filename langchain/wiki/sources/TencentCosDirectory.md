@@ -1,0 +1,22 @@
+---
+name: TencentCosDirectory
+category: sources
+source: python/integrations/document_loaders/tencent_cos_directory.mdx
+---
+
+## 描述
+
+Tencent cos directory integration - Integrate with the Tencent cos directory document loader using LangChain Python.
+
+## 原始文档
+
+- **主文档**: [`python/integrations/document_loaders/tencent_cos_directory.mdx`](../../raw/python/integrations/document_loaders/tencent_cos_directory.mdx)
+
+## 文档信息
+
+- **标题**: Tencent cos directory integration
+- **描述**: Integrate with the Tencent cos directory document loader using LangChain Python.
+
+## 相关页面
+
+- 查看原始文档获取完整信息
