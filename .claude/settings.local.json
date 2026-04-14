@@ -19,7 +19,10 @@
       "Bash(grep -E \"Memory\" D:/Project/AASelf/doc-wiki/langchain/wiki/sources/*.md)",
       "Bash(grep -E \"Document|Loader|Parse|Split|Text\" D:/Project/AASelf/doc-wiki/langchain/wiki/sources/*.md)",
       "Bash(grep -E \"Tool|Agent|Run\" D:/Project/AASelf/doc-wiki/langchain/wiki/sources/*.md)",
-      "Bash(grep -E \"Embedding|Embed\" D:/Project/AASelf/doc-wiki/langchain/wiki/sources/*.md)"
+      "Bash(grep -E \"Embedding|Embed\" D:/Project/AASelf/doc-wiki/langchain/wiki/sources/*.md)",
+      "Bash(grep -r \"oss/langgraph\" langchain/raw/src/oss/langgraph/*.mdx)",
+      "Bash(rm -f concepts_index.json langchain_index.json langgraph_index.json test_query.py generate_category_indexes.py build_wiki.py verify_wiki.py)",
+      "Bash(rm -rf langchain/ __pycache__/)"
     ]
   }
 }
