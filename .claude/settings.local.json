@@ -14,7 +14,12 @@
       "Bash(shuf)",
       "Bash(wc:*)",
       "Bash(mkdir -p archive)",
-      "Bash(mv clean_empty_wikis.py create_extended_wikis.py create_final_wikis.py create_missing_wikis.py recreate_wikis.py update_wiki_links.py index_all_docs.py archive/)"
+      "Bash(mv clean_empty_wikis.py create_extended_wikis.py create_final_wikis.py create_missing_wikis.py recreate_wikis.py update_wiki_links.py index_all_docs.py archive/)",
+      "Bash(grep -E \"Retriever|Search\" D:/Project/AASelf/doc-wiki/langchain/wiki/sources/*.md)",
+      "Bash(grep -E \"Memory\" D:/Project/AASelf/doc-wiki/langchain/wiki/sources/*.md)",
+      "Bash(grep -E \"Document|Loader|Parse|Split|Text\" D:/Project/AASelf/doc-wiki/langchain/wiki/sources/*.md)",
+      "Bash(grep -E \"Tool|Agent|Run\" D:/Project/AASelf/doc-wiki/langchain/wiki/sources/*.md)",
+      "Bash(grep -E \"Embedding|Embed\" D:/Project/AASelf/doc-wiki/langchain/wiki/sources/*.md)"
     ]
   }
 }

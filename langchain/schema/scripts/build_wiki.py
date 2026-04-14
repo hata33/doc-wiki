@@ -92,7 +92,8 @@ def create_wiki_content(source_file):
     """创建 Wiki 内容"""
     try:
         content = source_file.read_text(encoding='utf-8')
-    except:
+    except (OSError, UnicodeDecodeError) as e:
+        print(f"[警告] 无法读取文件 {source_file.name}: {e}")
         content = ""
 
     title = extract_title(content, source_file)
@@ -213,8 +214,7 @@ def build_docs_index():
 
 def build_category_indexes():
     """生成分类索引文件"""
-    from build_wiki import create_api_index, create_concepts_index, create_sources_index
-
+    import subprocess
     import sys
 
     if sys.platform == "win32":
@@ -223,18 +223,17 @@ def build_category_indexes():
 
     print("\n生成分类索引文件...\n")
 
-    # 这里调用 generate_category_indexes.py 中的函数
-    # 为了简化，直接执行该脚本
-    import subprocess
+    # 执行 generate_category_indexes.py 脚本
+    script_path = Path(__file__).parent / "generate_category_indexes.py"
     result = subprocess.run(
-        [sys.executable, WIKI_DIR.parent / "schema/scripts/generate_category_indexes.py"],
-        cwd=WIKI_DIR.parent.parent
+        [sys.executable, str(script_path)],
+        cwd=str(script_path.parent)
     )
 
     if result.returncode == 0:
         print("分类索引生成完成！")
     else:
-        print("分类索引生成失败。")
+        print(f"分类索引生成失败，返回码: {result.returncode}")
 
 
 if __name__ == "__main__":

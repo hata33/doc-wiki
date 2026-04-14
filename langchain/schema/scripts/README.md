@@ -64,7 +64,6 @@ python verify_wiki.py --fix
 
 ### 检查状态
 ```bash
-python stats.py
 python verify_wiki.py --stats
 ```
 
